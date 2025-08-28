@@ -11,6 +11,11 @@
     <meta name="keywords" content="swap simulator, crypto trading simulator, defi swap game, cryptocurrency simulator, blockchain trading practice, free crypto game, trading practice, paper trading, virtual crypto">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://sussyswapsimulator.net/">
+    <link rel="alternate" hreflang="en" href="https://sussyswapsimulator.net/">
+    <link rel="alternate" hreflang="de" href="https://sussyswapsimulator.net/de">
+    <link rel="alternate" hreflang="it" href="https://sussyswapsimulator.net/it">
+    <link rel="alternate" hreflang="fr" href="https://sussyswapsimulator.net/fr">
+    <link rel="alternate" hreflang="es" href="https://sussyswapsimulator.net/es">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Sussy Swap Simulator - Master Crypto Trading Risk-Free">
@@ -117,6 +122,7 @@
             display: flex;
             list-style: none;
             gap: 2rem;
+            align-items: center;
         }
         
         .nav-links a {
@@ -128,6 +134,28 @@
         
         .nav-links a:hover {
             color: var(--primary-solid);
+        }
+        
+        .lang-selector {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .lang-btn {
+            padding: 0.5rem 0.8rem;
+            background: var(--background);
+            border: 1px solid var(--primary-solid);
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--primary-solid);
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .lang-btn.active,
+        .lang-btn:hover {
+            background: var(--primary-solid);
+            color: white;
         }
         
         /* Hero Section */
@@ -350,6 +378,13 @@
                 <li><a href="/learn/defi-basics">Learn</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/contact">Contact</a></li>
+                <li class="lang-selector">
+                    <a href="/" class="lang-btn active">EN</a>
+                    <a href="/de" class="lang-btn">DE</a>
+                    <a href="/it" class="lang-btn">IT</a>
+                    <a href="/fr" class="lang-btn">FR</a>
+                    <a href="/es" class="lang-btn">ES</a>
+                </li>
             </ul>
         </nav>
     </header>

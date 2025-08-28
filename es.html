@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Sussy Swap Simulator - Domina el Crypto Trading Sin Riesgo | Juego DeFi Trading Gratis</title>
+    <meta name="description" content="Domina el crypto trading con nuestro Sussy Swap Simulator gratuito. Practica DeFi swapping, aprende estrategias de blockchain trading sin riesgo. ¡Comienza la simulación de trading ahora! Únete a 50,000+ traders que practican crypto swaps de forma segura.">
+    <meta name="keywords" content="simulador swap, simulador trading crypto, juego defi swap, simulador criptomonedas, práctica trading blockchain, juego crypto gratis, práctica trading, paper trading, crypto virtual">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sussyswapsimulator.net/es">
+    <link rel="alternate" hreflang="en" href="https://sussyswapsimulator.net/">
+    <link rel="alternate" hreflang="de" href="https://sussyswapsimulator.net/de">
+    <link rel="alternate" hreflang="it" href="https://sussyswapsimulator.net/it">
+    <link rel="alternate" hreflang="fr" href="https://sussyswapsimulator.net/fr">
+    <link rel="alternate" hreflang="es" href="https://sussyswapsimulator.net/es">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sussy Swap Simulator - Domina el Crypto Trading Sin Riesgo">
+    <meta property="og:description" content="Practica DeFi swapping y aprende estrategias de blockchain trading con nuestro simulador crypto trading gratuito. Sin riesgo, aprendizaje real.">
+    <meta property="og:image" content="https://sussyswapsimulator.net/images/og-crypto-simulator-es.jpg">
+    <meta property="og:url" content="https://sussyswapsimulator.net/es">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- CSS Styles -->
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --primary-solid: #667eea;
+            --secondary: #6b7280;
+            --background: #f8fafc;
+            --surface: #ffffff;
+            --text: #1e293b;
+            --accent: #22d3ee;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        .header {
+            background: var(--surface);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover { color: var(--primary-solid); }
+        
+        .lang-selector {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .lang-btn {
+            padding: 0.5rem 0.8rem;
+            background: var(--background);
+            border: 1px solid var(--primary-solid);
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--primary-solid);
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .lang-btn.active,
+        .lang-btn:hover {
+            background: var(--primary-solid);
+            color: white;
+        }
+        
+        .hero {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            backdrop-filter: blur(10px);
+        }
+        
+        .cta-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .game-section {
+            padding: 4rem 0;
+            background: var(--surface);
+        }
+        
+        .game-container {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .game-container h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .game-iframe {
+            width: 100%;
+            max-width: 900px;
+            height: 600px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .features {
+            padding: 4rem 0;
+            background: var(--background);
+        }
+        
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover { transform: translateY(-5px); }
+        
+        .feature-icon { font-size: 3rem; margin-bottom: 1rem; }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-solid);
+        }
+        
+        .content-section {
+            padding: 4rem 0;
+            background: var(--surface);
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+        }
+        
+        .content-block h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-solid);
+        }
+        
+        .content-block p { margin-bottom: 1rem; line-height: 1.8; }
+        .content-block ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+        .content-block li { margin-bottom: 0.5rem; }
+        
+        .footer {
+            background: var(--text);
+            color: white;
+            padding: 3rem 0 1rem;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        
+        .footer-links a:hover { opacity: 1; }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.5rem; }
+            .game-iframe { height: 400px; }
+            .content-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    
+    <!-- Tracking Code -->
+    <script defer data-domain="sussyswapsimulator.net" src="https://click.pageview.click/js/script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="/es" class="logo">🔄 Sussy Swap Simulator</a>
+            <ul class="nav-links">
+                <li><a href="/es">Inicio</a></li>
+                <li><a href="/es/simulador-crypto">Simulador</a></li>
+                <li><a href="/es/aprender">Aprender</a></li>
+                <li><a href="/es/acerca-de">Acerca de</a></li>
+                <li><a href="/es/contacto">Contacto</a></li>
+                <li class="lang-selector">
+                    <a href="/" class="lang-btn">EN</a>
+                    <a href="/de" class="lang-btn">DE</a>
+                    <a href="/it" class="lang-btn">IT</a>
+                    <a href="/fr" class="lang-btn">FR</a>
+                    <a href="/es" class="lang-btn active">ES</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Domina el Crypto Trading Sin Riesgo</h1>
+            <p>Practica DeFi swapping, aprende estrategias de blockchain trading y construye confianza con nuestro simulador swap avanzado. Únete a 50,000+ traders que aprenden crypto sin riesgo financiero.</p>
+            <a href="#juego" class="cta-button">🚀 Comenzar Trading Ahora</a>
+        </div>
+    </section>
+
+    <!-- Game Section -->
+    <section id="juego" class="game-section">
+        <div class="container">
+            <div class="game-container">
+                <h2>🎮 Simulador Swap Interactivo</h2>
+                <p>Experimenta simulación crypto trading en tiempo real con datos de mercado en vivo</p>
+                <iframe 
+                    src="https://cryptospaniards.com/simulator/" 
+                    class="game-iframe"
+                    title="Juego Simulador Crypto Swap Trading"
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>¿Por Qué Elegir Nuestro Simulador Swap?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>Trading Sin Riesgo</h3>
+                    <p>Practica con dinero virtual mientras aprendes estrategias de trading reales. Sin riesgo financiero, máximo valor educativo para principiantes y expertos crypto.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Datos Mercado Reales</h3>
+                    <p>Opera con precios live de criptomonedas y condiciones de mercado. Experimenta escenarios auténticos de DeFi swapping a través múltiples redes blockchain.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Análisis Avanzados</h3>
+                    <p>Rastrea tu rendimiento trading con análisis detallados. Aprende de errores, optimiza estrategias y domina la psicología del mercado crypto.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Desarrollo Habilidades</h3>
+                    <p>Desarrolla habilidades trading profesionales mediante tutoriales guiados, lecciones interactivas y niveles dificultad progresivos en DeFi trading.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Soporte Multi-Chain</h3>
+                    <p>Practica trading a través Ethereum, BSC, Polygon y otras blockchains principales. Domina diferentes protocolos DeFi y mecanismos AMM.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Aprendizaje Comunitario</h3>
+                    <p>Conecta con otros traders, comparte estrategias y aprende de profesionales DeFi experimentados en nuestra comunidad trading solidaria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-block">
+                    <h3>🚀 Comenzando con DeFi Swapping</h3>
+                    <p>El swapping de criptomonedas es la fundación de las finanzas descentralizadas (DeFi). Nuestro simulador swap te enseña habilidades esenciales necesarias para operar activos digitales con confianza y beneficio.</p>
+                    <p>Aprende cómo:</p>
+                    <ul>
+                        <li>Analizar tendencias mercado y movimientos precios</li>
+                        <li>Ejecutar estrategias swap rentables</li>
+                        <li>Gestionar riesgos y proteger tus inversiones</li>
+                        <li>Entender pools liquidez y market makers automatizados</li>
+                        <li>Navegar diferentes redes blockchain</li>
+                    </ul>
+                    <p>Nuestro programa formación integral guía principiantes desde conceptos básicos hasta técnicas trading avanzadas, asegurando desarrolles habilidades necesarias para trading crypto exitoso.</p>
+                </div>
+                
+                <div class="content-block">
+                    <h3>💡 Estrategias Trading Avanzadas</h3>
+                    <p>Domina estrategias DeFi trading sofisticadas usadas por traders crypto profesionales. Nuestro simulador proporciona experiencia práctica con escenarios trading complejos y condiciones mercado.</p>
+                    <p>Funcionalidades avanzadas incluyen:</p>
+                    <ul>
+                        <li>Oportunidades arbitraje a través diferentes exchanges</li>
+                        <li>Estrategias yield farming y liquidity mining</li>
+                        <li>Cálculo y mitigación pérdida impermanente</li>
+                        <li>Simulación flash loan y estrategias MEV</li>
+                        <li>Optimización portafolio y rebalanceo</li>
+                    </ul>
+                    <p>Practica estas estrategias en entorno seguro antes desplegar capital real, reduciendo significativamente tu curva aprendizaje y pérdidas potenciales.</p>
+                </div>
+                
+                <div class="content-block">
+                    <h3>📈 Análisis Mercado & Psicología</h3>
+                    <p>Trading crypto exitoso requiere entender psicología mercado y análisis técnico. Nuestro simulador te enseña leer gráficos, identificar patrones y tomar decisiones trading informadas.</p>
+                    <p>Áreas aprendizaje clave:</p>
+                    <ul>
+                        <li>Indicadores análisis técnico y señales</li>
+                        <li>Identificación niveles soporte y resistencia</li>
+                        <li>Análisis sentimiento mercado y psicología multitud</li>
+                        <li>Gestión riesgo y dimensionamiento posiciones</li>
+                        <li>Disciplina emocional y psicología trading</li>
+                    </ul>
+                    <p>Desarrolla marco mental necesario para rentabilidad consistente en mercados criptomonedas volátiles mediante ejercicios simulación prácticos.</p>
+                </div>
+                
+                <div class="content-block">
+                    <h3>🔧 Dominio Protocolos DeFi</h3>
+                    <p>Navega con confianza mundo complejo protocolos finanzas descentralizadas. Nuestro simulador cubre plataformas DeFi principales y sus características únicas.</p>
+                    <p>Cobertura protocolos incluye:</p>
+                    <ul>
+                        <li>Uniswap y mecánicas market maker automatizadas</li>
+                        <li>Protocolos préstamo Compound y Aave</li>
+                        <li>Trading stablecoin Curve Finance</li>
+                        <li>PancakeSwap y bridging cross-chain</li>
+                        <li>Staking token gobernanza y votación</li>
+                    </ul>
+                    <p>Comprende cómo funciona cada protocolo, sus estructuras comisiones y estrategias uso óptimo para rentabilidad máxima y exposición riesgo mínima.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="/es/acerca-de">Acerca de</a>
+                <a href="/es/contacto">Contacto</a>
+                <a href="/es/privacidad">Privacidad</a>
+                <a href="/es/terminos">Términos Servicio</a>
+                <a href="/es/descargo">Descargo Responsabilidad</a>
+                <a href="/es/cookies">Política Cookies</a>
+                <a href="/es/mapa-sitio.html">Mapa Sitio</a>
+            </div>
+            <p>&copy; 2025 Sussy Swap Simulator. Todos los derechos reservados. Plataforma educativa crypto trading.</p>
+        </div>
+    </footer>
+</body>
+</html>
