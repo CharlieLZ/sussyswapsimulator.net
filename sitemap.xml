@@ -43,44 +43,74 @@
 
     <!-- Core Pages -->
     <url>
-        <loc>https://sussyswapsimulator.net/about</loc>
-        <lastmod>2025-08-28</lastmod>
+        <loc>https://sussyswapsimulator.net/about.html</loc>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://sussyswapsimulator.net/contact</loc>
-        <lastmod>2025-08-28</lastmod>
+        <loc>https://sussyswapsimulator.net/contact.html</loc>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
+    <!-- Blog Section -->
+    <url>
+        <loc>https://sussyswapsimulator.net/blog.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Blog Articles -->
+    <url>
+        <loc>https://sussyswapsimulator.net/blog/defi-swapping-guide.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://sussyswapsimulator.net/blog/crypto-security-guide.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://sussyswapsimulator.net/blog/defi-arbitrage-strategies.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- Legal Pages -->
     <url>
-        <loc>https://sussyswapsimulator.net/privacy-policy</loc>
-        <lastmod>2025-08-28</lastmod>
+        <loc>https://sussyswapsimulator.net/privacy-policy.html</loc>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://sussyswapsimulator.net/terms-of-service</loc>
-        <lastmod>2025-08-28</lastmod>
+        <loc>https://sussyswapsimulator.net/terms-of-service.html</loc>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://sussyswapsimulator.net/disclaimer</loc>
-        <lastmod>2025-08-28</lastmod>
+        <loc>https://sussyswapsimulator.net/disclaimer.html</loc>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://sussyswapsimulator.net/cookie-policy</loc>
-        <lastmod>2025-08-28</lastmod>
+        <loc>https://sussyswapsimulator.net/cookie-policy.html</loc>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
